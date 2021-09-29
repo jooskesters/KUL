@@ -1,3 +1,7 @@
+package Entity;
+
+import Utility.SimpleMath;
+
 public class Vector {
     private int x;
     private int y;

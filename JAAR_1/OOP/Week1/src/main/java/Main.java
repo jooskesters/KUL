@@ -1,3 +1,7 @@
+import Entity.Vector;
+import Utility.ArrayUtil;
+import Utility.SimpleMath;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -16,7 +20,7 @@ public class Main {
         assert SimpleMath.AverageFromToNumbers(2,4) == 3;
 
         // Oefening 3
-        System.out.println("SimpleMath assertions");
+        System.out.println("Utilities.SimpleMath assertions");
         System.out.println("Iterative Power: " + SimpleMath.IterativePower(3,3));
         assert SimpleMath.IterativePower(2,2) == 4;
 

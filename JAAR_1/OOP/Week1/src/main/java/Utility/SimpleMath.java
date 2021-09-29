@@ -1,4 +1,4 @@
-import java.io.UncheckedIOException;
+package Utility;
 
 public class SimpleMath {
 
