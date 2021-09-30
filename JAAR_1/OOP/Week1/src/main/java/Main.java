@@ -2,6 +2,7 @@ import Entity.Vector;
 import Utility.ArrayUtil;
 import Utility.SimpleMath;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -68,7 +69,35 @@ public class Main {
         System.out.println("Shifting the values of the testVector");
         testVector.shift(testVector2);
 
-        // Siblings
+        // Sorting
+        // Checks
+        Integer[] arr = new Integer[] {78, 34, 1, 3, 90, 34, -1, -4, 6, 55, 20, -65};
+        System.out.println("Sorting array in ascending order");
+        Integer[] result = ArrayUtil.sortAscending(arr);
+        System.out.println("Sorted array: " + Arrays.toString(result));
+
+        // Occurence count
+        int[] arr2 = new int[] {5,5,5,5,6,4,5,6,4,5};
+        int result2 = ArrayUtil.elementOccurenceCount(arr2, 6);
+        System.out.println("Occurence count of the number 6: " + result2);
+
+        // Array is permutation of other array.
+        Integer[] arr3 = {2, 1, 3, 5, 4, 3, 2};
+        Integer[] arr4 = {3, 2, 2, 4, 5, 3, 1, 8};
+        System.out.println("is permutation: " + ArrayUtil.permutationCheck(arr3, arr4));
+        System.out.println("is elegantPermutation: " + ArrayUtil.elegantPermutationCheck(arr3, arr4));
+
+        // Is sorted version of other array
+        Integer[] arr5 = {1,2,3};
+        Integer[] arr6 = {2,1,3};
+        System.out.println("Is sorted version: " + ArrayUtil.isSortedVersion(arr5, arr6));
+
+        // Insertion sort
+        Integer[] arr7 = {2,2,3,8,4,6,7};
+        ArrayUtil.insert(arr7, 6,5);
+        System.out.println("Insert in array: " + Arrays.toString(ArrayUtil.insert(arr7, 6, 5)));
+
+        System.out.println("Remove greatest element from array: " + Arrays.toString(ArrayUtil.removeGreatest(arr7, 6)));
 
     }
 }

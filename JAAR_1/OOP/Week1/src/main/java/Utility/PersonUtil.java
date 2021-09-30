@@ -13,14 +13,4 @@ public class PersonUtil {
         return amountOfSiblings;
     }
 
-    public static int recursiveSiblingCount(Person p){
-        int amountOfSiblings = 0;
-
-        if (p.getNextOldestSibling() == null){
-            return 0;
-        }
-        else{
-            
-        }
-    }
 }
