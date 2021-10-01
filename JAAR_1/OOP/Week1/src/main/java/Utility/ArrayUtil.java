@@ -198,5 +198,31 @@ public class ArrayUtil {
         return result;
     }
 
+    public static Integer[] selectionSort(Integer[] arr, int n){
+        arr = Arrays.copyOfRange(arr, 0, n);
+        int temp = 0;
+        int minValue = 0;
+        int minIndex = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+            // assign next unsorted item as minValue
+            minValue = arr[i];
+
+            for (int j = i; j < arr.length; j++) {
+                // if there is a smaller unsorted item, assign this as the minValue
+                if (arr[j] < minValue){
+                    minValue = arr[j];
+                    minIndex = j;
+                }
+            }
+            
+            if (minValue < arr[i]){
+                temp = arr[i];
+                arr[i] = arr[minIndex];
+                arr[minIndex] = temp;
+            }
+        }
+        return arr;
+    }
 
 }
