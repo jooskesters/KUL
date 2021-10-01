@@ -121,7 +121,7 @@ public class Main {
         // Is sorted version of other array
         Integer[] arr5 = {1,2,3};
         Integer[] arr6 = {2,1,3};
-        System.out.println("Is sorted version: " + ArrayUtil.isSortedVersion(arr5, arr6));
+        //System.out.println("Is sorted version: " + ArrayUtil.isSortedVersion(arr5, arr6));
 
         // Insert
         Integer[] arr7 = {2,2,3,8,4,6,7};
@@ -133,9 +133,9 @@ public class Main {
         System.out.println("Insertion sort: " + Arrays.toString(ArrayUtil.insertionSort(arr8)));
 
         Integer[] arr9 = {2,2,3,8,4,6,7};
-        Arrays.toString(ArrayUtil.removeGreatest(arr9, 7));
+        //Arrays.toString(ArrayUtil.removeGreatest(arr9, 7));
 
-        System.out.println("Remove greatest element from array: " + Arrays.toString(ArrayUtil.removeGreatest(arr7, 7)));
+        System.out.println("Remove greatest element from array: " + Arrays.toString(ArrayUtil.removeGreatest(arr9, 7)));
 
     }
 }

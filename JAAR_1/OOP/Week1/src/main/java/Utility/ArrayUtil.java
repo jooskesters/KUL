@@ -1,6 +1,5 @@
 package Utility;
 
-import jdk.swing.interop.SwingInterOpUtils;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -113,12 +112,15 @@ public class ArrayUtil {
         return false;
     }
 
+    /*
     public static boolean isSortedVersion(Integer[] arr1, Integer[] arr2) {
         if (Arrays.compare(sortAscending(arr1), arr2) == 0) {
             return true;
         }
         return false;
     }
+
+     */
 
     public static Integer[] insert(Integer[] arr, int n, int v) {
         arr = sortAscending(Arrays.copyOfRange(arr, 0, n));
@@ -145,12 +147,19 @@ public class ArrayUtil {
     // TODO: insertion sort
     public static Integer[] insertionSort(Integer[] arr){
         for (int i = 1; i < arr.length; i++) {
+            // take an unsorted item
             int current = arr[i];
+
+            // get the value to look at cards left from the unsorted item
             int j = i-1;
+
+            // keep looking left from the current item as long as j>=0 and the item on the left of the current item is bigger then the current item
             while (j >= 0 && arr[j] > current){
+                // shift numbers that are greater then current to the right
                 arr[j+1] = arr[j];
                 j--;
             }
+            // insert current at the correct position
             arr[j+1] = current;
         }
         return arr;
@@ -169,7 +178,7 @@ public class ArrayUtil {
 
     public static Integer[] removeGreatest(Integer[] arr, int n){
         arr = Arrays.copyOfRange(arr, 0, n);
-        Integer[] result = new Integer[arr.length];
+        Integer[] result = new Integer[arr.length - 1];
 
         int indexLargestNumber = 0;
         int largestNumber = findGreatest(arr, n);
@@ -178,21 +187,15 @@ public class ArrayUtil {
                 indexLargestNumber = i;
         }
 
-
-        // TODO: remove the largestNumber from the sequence
-        for (int i = 0; i < arr.length; i++) {
-            if (i == indexLargestNumber){
-                arr[i] = null;
+        for (int i = 0; i < arr.length-1; i++) {
+            if (i != indexLargestNumber)
+                result[i] = arr[i];
+            else {
+                result[i] = arr[i+1];
             }
         }
 
-
-
-        for (int i = 0; i < arr.length; i++) {
-            result[i] = arr[i];
-        }
-
-        return arr;
+        return result;
     }
 
 
