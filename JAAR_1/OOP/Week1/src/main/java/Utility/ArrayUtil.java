@@ -114,7 +114,6 @@ public class ArrayUtil {
     }
 
     public static boolean isSortedVersion(Integer[] arr1, Integer[] arr2) {
-        System.out.println("kaasje: " + Arrays.compare(arr1, sortAscending(arr2)));
         if (Arrays.compare(sortAscending(arr1), arr2) == 0) {
             return true;
         }
@@ -144,19 +143,41 @@ public class ArrayUtil {
     }
 
     // TODO: insertion sort
+    public static Integer[] insertionSort(Integer[] arr){
+        for (int i = 1; i < arr.length; i++) {
+            int current = arr[i];
+            int j = i-1;
+            while (j >= 0 && arr[j] > current){
+                arr[j+1] = arr[j];
+                j--;
+            }
+            arr[j+1] = current;
+        }
+        return arr;
+    }
+
+    public static int findGreatest(Integer[] arr, int n){
+        arr = Arrays.copyOfRange(arr, 0, n);
+        int greatestNumber = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (greatestNumber < arr[i]){
+                greatestNumber = arr[i];
+            }
+        }
+        return greatestNumber;
+    }
 
     public static Integer[] removeGreatest(Integer[] arr, int n){
         arr = Arrays.copyOfRange(arr, 0, n);
-        Integer[] result = new Integer[arr.length - 1];
+        Integer[] result = new Integer[arr.length];
 
         int indexLargestNumber = 0;
-        int largestNumber = arr[0];
+        int largestNumber = findGreatest(arr, n);
         for (int i = 0; i < arr.length; i++) {
-            if (largestNumber < arr[i]){
+            if (arr[i] == largestNumber)
                 indexLargestNumber = i;
-                largestNumber = arr[i];
-            }
         }
+
 
         // TODO: remove the largestNumber from the sequence
         for (int i = 0; i < arr.length; i++) {
@@ -165,16 +186,14 @@ public class ArrayUtil {
             }
         }
 
-        for (int i = 0; i < indexLargestNumber; i++) {
+
+
+        for (int i = 0; i < arr.length; i++) {
             result[i] = arr[i];
         }
-        for (int i = indexLargestNumber + 1; i < arr.length; i++) {
-            result[i] = arr[i];
-        }
-
-
-
 
         return arr;
     }
+
+
 }

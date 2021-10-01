@@ -19,6 +19,7 @@ public class Vector {
 
     public void setX(int x) {
         this.x = x;
+        this.size = size();
     }
 
     public int getY() {
@@ -27,6 +28,7 @@ public class Vector {
 
     public void setY(int y) {
         this.y = y;
+        this.size = size();
     }
 
     public double getSize() {

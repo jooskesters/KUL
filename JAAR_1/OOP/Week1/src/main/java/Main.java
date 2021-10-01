@@ -1,5 +1,7 @@
+import Entity.Person;
 import Entity.Vector;
 import Utility.ArrayUtil;
+import Utility.PersonUtil;
 import Utility.SimpleMath;
 
 import java.lang.reflect.Array;
@@ -69,6 +71,35 @@ public class Main {
         System.out.println("Shifting the values of the testVector");
         testVector.shift(testVector2);
 
+        // Siblings
+        // Oefening 1
+        // Create person objects
+        Person p1 = new Person();
+        Person p2 = new Person();
+        Person p3 = new Person();
+        Person p4 = new Person();
+        Person p5 = new Person();
+
+        // Set ages
+        p1.setAge(5);
+        p2.setAge(6);
+        p3.setAge(29);
+        p4.setAge(21);
+        p5.setAge(19);
+
+        // add siblings
+        p4.setNextOldestSibling(p5);
+        p3.setNextOldestSibling(p4);
+        p2.setNextOldestSibling(p3);
+        p1.setNextOldestSibling(p2);
+
+        System.out.println("Iterative person count - p1 has: " + PersonUtil.iterativeSiblingCount(p1) + " siblings");
+        System.out.println("Recursive person count - p1 has: " + PersonUtil.recursiveSiblingCount(p1) + " siblings");
+
+        System.out.println("Iterative adult person count - p1 has: " + PersonUtil.iterativeAdultSiblingCount(p1) + " siblings");
+        System.out.println("Recursive person count - p1 has: " + PersonUtil.recursiveAdultSiblingCount(p1) + " siblings");
+
+
         // Sorting
         // Checks
         Integer[] arr = new Integer[] {78, 34, 1, 3, 90, 34, -1, -4, 6, 55, 20, -65};
@@ -92,12 +123,19 @@ public class Main {
         Integer[] arr6 = {2,1,3};
         System.out.println("Is sorted version: " + ArrayUtil.isSortedVersion(arr5, arr6));
 
-        // Insertion sort
+        // Insert
         Integer[] arr7 = {2,2,3,8,4,6,7};
-        ArrayUtil.insert(arr7, 6,5);
-        System.out.println("Insert in array: " + Arrays.toString(ArrayUtil.insert(arr7, 6, 5)));
+        System.out.println("Insert in array: " + Arrays.toString(ArrayUtil.insert(arr7, 7, 5)));
 
-        System.out.println("Remove greatest element from array: " + Arrays.toString(ArrayUtil.removeGreatest(arr7, 6)));
+        Integer[] arr8 = {2,2,3,8,4,6,7};
+
+        // Insertion sort
+        System.out.println("Insertion sort: " + Arrays.toString(ArrayUtil.insertionSort(arr8)));
+
+        Integer[] arr9 = {2,2,3,8,4,6,7};
+        Arrays.toString(ArrayUtil.removeGreatest(arr9, 7));
+
+        System.out.println("Remove greatest element from array: " + Arrays.toString(ArrayUtil.removeGreatest(arr7, 7)));
 
     }
 }
