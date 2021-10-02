@@ -2,10 +2,7 @@ package Utility;
 
 
 import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -225,4 +222,74 @@ public class ArrayUtil {
         return arr;
     }
 
+    public static Integer[] merge(Integer[] array1, Integer[] array2){
+        // To make sure the result array is sorted, sort the input arrays
+        array1 = sortAscending(array1);
+        array2 = sortAscending(array2);
+
+
+        Map<Integer, Integer> map1 = getOccurences(array1);
+
+        Map<Integer, Integer> map2 = getOccurences(array2);
+
+        // merge both maps together
+        map2.forEach((k, v) -> map1.merge(k,v, Integer::sum));
+
+        int requiredSize = map1.values().stream().reduce(0, Integer::sum);
+        Integer[] result = new Integer[requiredSize];
+
+        int iterator = 0;
+
+        for (Map.Entry<Integer, Integer> entry : map1.entrySet()) {
+            for (int i = 0; i < entry.getValue(); i++) {
+                result[iterator] = entry.getKey();
+                iterator++;
+            }
+        }
+        return result;
+    }
+
+    private static Map<Integer, Integer> getOccurences(Integer[] array1) {
+        Map<Integer, Integer> map = new TreeMap<>();
+        int occurences = 0;
+        for (int i = 0; i < array1.length; i++) {
+            int currentNumber = array1[i];
+            for (int j = 0; j < array1.length; j++) {
+                if (currentNumber == array1[j]){
+                    occurences ++;
+                }
+            }
+            map.put(array1[i], occurences);
+            // store the number of occurences for the currently selected number in a map
+            occurences = 0;
+        }
+        return map;
+    }
+
+    public static Integer[] subArray(Integer[] array, int a , int b){
+        int size = b - a;
+        Integer[] result = new Integer[size];
+        int selectionIterator = a;
+        for (int i = 0; i < size; i++) {
+            result[i] = array[selectionIterator];
+            selectionIterator++;
+        }
+        return result;
+    }
+
+    public static Integer[] mergeSort(Integer[] array){
+        if (array.length == 0 || array.length == 1){
+            return array;
+        }
+
+        int half = array.length / 2;
+
+        Integer[] firstHalf = subArray(array, 0, half);
+        Integer[] secondHalf = subArray(array, half, array.length);
+
+        Integer[] arr = mergeSort(firstHalf);
+        Integer[] arr2 = mergeSort(secondHalf);
+        return merge(arr, arr2);
+
+    }
 }

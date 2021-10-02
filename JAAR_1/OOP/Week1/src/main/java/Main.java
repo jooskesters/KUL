@@ -137,6 +137,18 @@ public class Main {
 
         System.out.println("Remove greatest element from array: " + Arrays.toString(ArrayUtil.removeGreatest(arr9, 7)));
 
+        // Merge
+        Integer[] arr10 = {2,2,2,3,3,3,5,6,8};
+        Integer[] arr11 = {4,4,4,5,5,5,6,6,6};
+        System.out.println("Merge arrays: " + Arrays.toString(ArrayUtil.merge(arr10, arr11)));
+
+        // Subarray
+        Integer[] arr12 = {1,2,3,4,5,6};
+        System.out.println("Subarray: " + Arrays.toString(ArrayUtil.subArray(arr12, 2,5)));
+
+        // MergeSort
+        Integer[] arr13 = {3,1,2,4,6,5};
+        System.out.println("Mergesort: " + Arrays.toString(ArrayUtil.mergeSort(arr13)));
     }
 }
 
