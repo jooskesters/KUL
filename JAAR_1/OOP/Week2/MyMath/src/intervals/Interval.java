@@ -25,7 +25,9 @@ public class Interval {
 	public Interval() {}
 	
 	/**
-	 * @pre This interval's given lowerBound is less than the given upperBound
+	 * @throws IllegalArgumentException if {@code upperBound} is less than {@code lowerBound}.
+	 * 		| lowerBound > upperBound
+	 * @pre This interval's given lowerBound is less than the given upperBound.
 	 * 		| lowerBound <= upperBound 
 	 * @post This interval's lowerBound equals the given lowerBound.
 	 * 		| getLowerBound() == lowerBound
@@ -33,6 +35,9 @@ public class Interval {
 	 * 		| getUpperBound() == upperBound
 	 */
 	public Interval(int lowerBound, int upperBound) {
+		if(lowerBound > upperBound) {
+			throw new IllegalArgumentException("`lowerBound` is greater than `upperBound`");
+		}
 		this.lowerBound = lowerBound;
 		this.width = upperBound - lowerBound;
 	}
