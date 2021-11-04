@@ -1,0 +1,1014 @@
+﻿<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>Deduction Rules</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Lucida Sans Unicode";
+	panose-1:2 11 6 2 3 5 4 2 2 4;}
+@font-face
+	{font-family:+mn-ea;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:+mn-cs;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.MsoFootnoteReference
+	{vertical-align:super;}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.VoetnoottekstChar
+	{mso-style-name:"Voetnoottekst Char";
+	font-family:"Times New Roman",serif;}
+span.KoptekstChar
+	{mso-style-name:"Koptekst Char";
+	font-family:"Times New Roman",serif;}
+.MsoChpDefault
+	{font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 54.0pt 72.0pt 54.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=NL link="#0563C1" vlink="#954F72" style = 'margin-left: 0.5cm; margin-right: 0.5cm; margin-top: 0.4cm'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal'><b><font size=7 color="#339966" face="Times New Roman"><span
+lang=EN-US style='font-size:36.0pt;font-family:"Times New Roman",serif;
+color:#339966;font-weight:bold'>LogicPalet Deduction Rules</span></font></b></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal'><font size=5 color="#339966" face="Times New Roman"><span lang=EN-US
+style='font-size:16.0pt;font-family:"Times New Roman",serif;color:#339966'>&nbsp;</span></font></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><font size=3
+face="Times New Roman"><span lang=EN-US style='font-size:12.0pt;font-family:
+"Times New Roman",serif'>T</span></font><font size=3 face="Times New Roman"><span
+lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman",serif'>he
+student can construct formal proofs using the ProofAssistant. Click on the menu
+item “Proofs &gt; ProofAssistant” in window FormulaWriter to open the window ProofAssistant.
+With this tool one constructs correct formal proofs using the KE deduction
+rules, which are much simpler than the deduction rules used in most other
+existing proof assistants. Such proofs are called KE proofs. The tool is
+inspired by, but different from, the software <u><font color=blue><span
+style='color:blue'><a href="https://staff.fnwi.uva.nl/u.endriss/WinKE/"><font
+color=blue><span style='color:blue'>WinKE</span></font></a></span></font></u>
+developed by Ulle Endriss.</span></font></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><font size=3
+face="Times New Roman"><span lang=EN-GB style='font-size:12.0pt;font-family:
+"Times New Roman",serif'>To construct a KE proof that a given sentence B is a
+logical consequence of a given set T of sentences, one has to derive a
+contradiction from T and the negation of B, using the KE rules of deduction. It
+is allowed to make <i><span style='font-style:italic'>case distinctions</span></i>.
+For any sentence C one can split up the proof </span></font><font size=2
+face="Times New Roman"><span lang=EN-GB style='font-size:10.0pt;font-family:
+"Times New Roman",serif'>(at any stage of its construction)</span></font><font
+size=3 face="Times New Roman"><span lang=EN-GB style='font-size:12.0pt;
+font-family:"Times New Roman",serif'> in two cases: the case that C is true and
+the case that C is false. This yields two <i><span style='font-style:italic'>branches</span></i>.
+Usually one takes for C a sentence that appears already in the proof or a
+sub-sentence of such a sentence. Using the tool, one first selects such a
+sentence before clicking on the button “Case Distinction”. Repeated case
+distinctions yield a <i><span style='font-style:italic'>proof tree</span></i>
+which might have many branches. A KE proof is complete if each branch contains
+a <i><span style='font-style:italic'>contradiction</span></i>, meaning that the
+branch contains both a sentence and its negation. Such a branch is called a <i><span
+style='font-style:italic'>closed branch</span></i>. </span></font></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><font size=3
+face="Times New Roman"><span lang=EN-GB style='font-size:12.0pt;font-family:
+"Times New Roman",serif'>A KE deduction is always based on sentences that
+appear in the same branch and results in appending the conclusions to that same
+branch. In the ProofAssistant that branch has to be <i><span style='font-style:
+italic'>activated</span></i> first (unless there are no case distinctions), by
+selecting the corresponding case and clicking on the button “Activate Branch”.
+To apply a deduction rule, first select the sentences on which to apply the
+rule (the assumptions) and click on the button for that rule. The results of
+the deduction are then appended to the activated branch. After you obtained
+both a sentence and its negation in the activated branch, you have to select
+these two sentences and click on the button “Contradiction” to formally close
+that branch. Your KE proof is complete when all branches have been closed in
+this way. </span></font></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><font size=3
+face="Times New Roman"><span lang=EN-GB style='font-size:12.0pt;font-family:
+"Times New Roman",serif'>Sometimes, after applying a deduction rule, some of
+its assumptions might not be useful anymore in the currently activated branch.
+Such sentences <i><font color=red><span style='color:red;font-style:italic'>can
+be marked</span></font></i><font color=red><span style='color:red'> </span></font>in
+order to remind the user not to use it anymore in the activated branch.
+Attention: it might be necessary to <i><font color=red><span style='color:red;
+font-style:italic'>unmark</span></font></i> some of these when another branch
+is activated!</span></font></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><font size=3
+face="Times New Roman"><span lang=EN-GB style='font-size:12.0pt;font-family:
+"Times New Roman",serif'>For simplicity of the deduction rules, <i><font
+color=red><span style='color:red;font-style:italic'>the ProofAssistant does not
+support using formulas which contain an inequality</span></font></i></span></font><font
+size=2 face="Courier New"><span lang=EN-GB style='font-size:10.0pt;font-family:
+"Courier New"'> </span></font><font size=3 color=red face="Lucida Sans Unicode"><span
+lang=EN-US style='font-size:12.0pt;font-family:"Lucida Sans Unicode",sans-serif;
+color:red'>≠.</span></font><font size=3 color=red face="Times New Roman"><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif;
+color:red'> </span></font><font size=3 face="Times New Roman"><span lang=EN-GB
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>This does not hurt
+because an inequality can always be replaced by the negation of an equality.</span></font></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><font size=3
+face="Times New Roman"><span lang=EN-GB style='font-size:12.0pt;font-family:
+"Times New Roman",serif'>Next we give a complete list of the KE rules of
+deduction.</span></font></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:normal'><b><font
+size=4 color="#0070c0" face="Times New Roman"><span lang=EN-GB
+style='font-size:14.0pt;font-family:"Times New Roman",serif;color:#0070C0;
+font-weight:bold'>The KE Deduction Rules</span></font></b></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><b><font
+size=3 color="#0070c0" face="Times New Roman"><span lang=EN-GB
+style='font-size:12.0pt;font-family:"Times New Roman",serif;color:#0070C0;
+font-weight:bold'>The </span></font></b><b><font size=3 color="#0070c0"
+face="Lucida Sans Unicode"><span lang=EN-US style='font-size:12.0pt;font-family:
+"Lucida Sans Unicode",sans-serif;color:#0070C0;font-weight:bold'>∃</span></font></b><b><font
+size=3 color="#0070c0" face="Cambria Math"><span lang=EN-US style='font-size:
+12.0pt;font-family:"Cambria Math",serif;color:#0070C0;font-weight:bold'> </span></font></b><b><font
+size=3 color="#0070c0" face="Times New Roman"><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif;color:#0070C0;
+font-weight:bold'>Rule</span></font></b><font size=3 color="#0070c0"
+face="Times New Roman"><span lang=EN-US style='font-size:12.0pt;font-family:
+"Times New Roman",serif;color:#0070C0'>.</span></font><font size=3
+face="Cambria Math"><span lang=EN-US style='font-size:12.0pt;font-family:"Cambria Math",serif'>
+</span></font><font size=3 face="Times New Roman"><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>From </span></font><font
+size=3 face="Lucida Sans Unicode"><span lang=EN-US style='font-size:12.0pt;
+font-family:"Lucida Sans Unicode",sans-serif'>∃</span></font><font size=3
+face="Times New Roman"><span lang=EN-US style='font-size:12.0pt;font-family:
+"Times New Roman",serif'>x: A(x) one deduces A(c), where c is a <i><font
+color=red><span style='color:red;font-style:italic'>new constant</span></font></i>
+that does <i><font color=red><span style='color:red;font-style:italic'>not</span></font></i><font
+color=red><span style='color:red'> </span></font>yet appear in the current
+branch, and A(c) is obtained from A(x) by replacing each free occurrence of the
+variable x by c. <u>Moreover</u>, from ¬</span></font><font size=3
+face="Lucida Sans Unicode"><span lang=EN-US style='font-size:12.0pt;font-family:
+"Lucida Sans Unicode",sans-serif'>∀</span></font><font size=3
+face="Times New Roman"><span lang=EN-US style='font-size:12.0pt;font-family:
+"Times New Roman",serif'>x: A(x) one deduces ¬A(c), with c and A(c) as above.</span></font></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><b><font
+size=3 color="#0070c0" face="Times New Roman"><span lang=EN-GB
+style='font-size:12.0pt;font-family:"Times New Roman",serif;color:#0070C0;
+font-weight:bold'>The </span></font></b><font size=3 color="#0070c0"
+face="Lucida Sans Unicode"><span lang=EN-US style='font-size:12.0pt;font-family:
+"Lucida Sans Unicode",sans-serif;color:#0070C0'>∀</span></font><b><font size=3
+color="#0070c0" face="Times New Roman"><span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman",serif;color:#0070C0;font-weight:bold'> Rule</span></font></b><font
+size=3 color="#0070c0" face="Times New Roman"><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif;color:#0070C0'>.</span></font><font
+size=3 face="Cambria Math"><span lang=EN-US style='font-size:12.0pt;font-family:
+"Cambria Math",serif'> </span></font><font size=3 face="Times New Roman"><span
+lang=EN-US style='font-size:12.0pt;font-family:"Times New Roman",serif'>From </span></font><font
+size=3 face="Lucida Sans Unicode"><span lang=EN-US style='font-size:12.0pt;
+font-family:"Lucida Sans Unicode",sans-serif'>∀</span></font><font size=3
+face="Times New Roman"><span lang=EN-US style='font-size:12.0pt;font-family:
+"Times New Roman",serif'>x: A(x) one deduces A(t), where t is any <i><font
+color=red><span style='color:red;font-style:italic'>term without variables</span></font></i>,
+and A(t) is obtained from A(x) by replacing each free occurrence of the
+variable x by t. <u>Moreover</u>, from ¬</span></font><font size=3
+face="Lucida Sans Unicode"><span lang=EN-US style='font-size:12.0pt;font-family:
+"Lucida Sans Unicode",sans-serif'>∃</span></font><font size=3
+face="Times New Roman"><span lang=EN-US style='font-size:12.0pt;font-family:
+"Times New Roman",serif'>x: A(x) one deduces ¬A(t), with t and A(t) as above.</span></font></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:normal'><b><font
+size=3 color="#0070c0" face="Times New Roman"><span lang=EN-US
+style='font-size:12.0pt;font-family:"Times New Roman",serif;color:#0070C0;
+font-weight:bold'>The Propositional Rule.</span></font></b><font size=3
+face="Times New Roman"><span lang=EN-US style='font-size:12.0pt;font-family:
+"Times New Roman",serif'> The following table shows the deductions that are
+allowed by the Propositional Rule, where </span></font><u><font size=3
+color=black face="Times New Roman"><span lang=EN-US style='font-size:12.0pt;
+font-family:"Times New Roman",serif;color:black'>¬A</span></font></u><font
+size=3 color=black face="Times New Roman"><span lang=EN-US style='font-size:
+12.0pt;font-family:"Times New Roman",serif;color:black'> denotes the complement
+of A. The complement of a sentence A is C when A is of the form ¬C, and else
+the complement of A is ¬A.</span></font></p>
+
+<div align=center>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="99%"
+ style='width:99.0%;border-collapse:collapse;border:none'>
+ <tr height=40 style='height:19.85pt'>
+  <td width="25%" height=40 style='width:25.0%;border:solid #00B0F0 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><b><font
+  size=3 color="#0070c0" face="Times New Roman"><span lang=FR-BE
+  style='font-size:12.0pt;font-family:"Times New Roman",serif;color:#0070C0;
+  font-weight:bold'>Assumption 1</span></font></b></p>
+  </td>
+  <td width="25%" height=40 style='width:25.0%;border:solid #00B0F0 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><b><font
+  size=3 color="#0070c0" face="Times New Roman"><span lang=FR-BE
+  style='font-size:12.0pt;font-family:"Times New Roman",serif;color:#0070C0;
+  font-weight:bold'>Assumption 2</span></font></b></p>
+  </td>
+  <td width="25%" height=40 style='width:25.0%;border:solid #00B0F0 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><b><font
+  size=3 color="#0070c0" face="Times New Roman"><span lang=FR-BE
+  style='font-size:12.0pt;font-family:"Times New Roman",serif;color:#0070C0;
+  font-weight:bold'>Conclusion 1</span></font></b></p>
+  </td>
+  <td width="25%" height=40 style='width:25.0%;border:solid #00B0F0 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><b><font
+  size=3 color="#0070c0" face="Times New Roman"><span lang=FR-BE
+  style='font-size:12.0pt;font-family:"Times New Roman",serif;color:#0070C0;
+  font-weight:bold'>Conclusion 2</span></font></b></p>
+  </td>
+ </tr>
+ <tr height=40 style='height:19.85pt'>
+  <td width="25%" height=40 bgcolor="#D3DFEE" style='width:25.0%;border:solid #00B0F0 1.0pt;
+  border-top:none;background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=EN-US style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>A ∧ B</span></font></p>
+  </td>
+  <td width="25%" height=40 bgcolor="#D3DFEE" style='width:25.0%;border-top:
+  none;border-left:none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>&nbsp;</span></font></p>
+  </td>
+  <td width="25%" height=40 bgcolor="#D3DFEE" style='width:25.0%;border-top:
+  none;border-left:none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>A</span></font></p>
+  </td>
+  <td width="25%" height=40 bgcolor="#D3DFEE" style='width:25.0%;border-top:
+  none;border-left:none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>B</span></font></p>
+  </td>
+ </tr>
+ <tr height=40 style='height:19.85pt'>
+  <td width="25%" height=40 style='width:25.0%;border:solid #00B0F0 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=EN-US style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>A ∨ B</span></font></p>
+  </td>
+  <td width="25%" height=40 style='width:25.0%;border-top:none;border-left:
+  none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><u><font
+  size=1 face="Lucida Sans Unicode"><span lang=EN-US style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>¬</span></font></u><u><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>A</span></font></u></p>
+  </td>
+  <td width="25%" height=40 style='width:25.0%;border-top:none;border-left:
+  none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>B</span></font></p>
+  </td>
+  <td width="25%" height=40 style='width:25.0%;border-top:none;border-left:
+  none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>&nbsp;</span></font></p>
+  </td>
+ </tr>
+ <tr height=40 style='height:19.85pt'>
+  <td width="25%" height=40 bgcolor="#D3DFEE" style='width:25.0%;border:solid #00B0F0 1.0pt;
+  border-top:none;background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=EN-US style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>A ∨ B</span></font></p>
+  </td>
+  <td width="25%" height=40 bgcolor="#D3DFEE" style='width:25.0%;border-top:
+  none;border-left:none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><u><font
+  size=1 face="Lucida Sans Unicode"><span lang=EN-US style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>¬</span></font></u><u><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>B</span></font></u></p>
+  </td>
+  <td width="25%" height=40 bgcolor="#D3DFEE" style='width:25.0%;border-top:
+  none;border-left:none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>A</span></font></p>
+  </td>
+  <td width="25%" height=40 bgcolor="#D3DFEE" style='width:25.0%;border-top:
+  none;border-left:none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>&nbsp;</span></font></p>
+  </td>
+ </tr>
+ <tr height=40 style='height:19.85pt'>
+  <td width="25%" height=40 style='width:25.0%;border:solid #00B0F0 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>A </span></font><font size=1
+  face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>⇒</span></font><font size=1
+  face="Lucida Sans Unicode"><span lang=EN-US style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'> B</span></font></p>
+  </td>
+  <td width="25%" height=40 style='width:25.0%;border-top:none;border-left:
+  none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>A</span></font></p>
+  </td>
+  <td width="25%" height=40 style='width:25.0%;border-top:none;border-left:
+  none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>B</span></font></p>
+  </td>
+  <td width="25%" height=40 style='width:25.0%;border-top:none;border-left:
+  none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>&nbsp;</span></font></p>
+  </td>
+ </tr>
+ <tr height=40 style='height:19.85pt'>
+  <td width="25%" height=40 bgcolor="#D3DFEE" style='width:25.0%;border:solid #00B0F0 1.0pt;
+  border-top:none;background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>A </span></font><font size=1
+  face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>⇒</span></font><font size=1
+  face="Lucida Sans Unicode"><span lang=EN-US style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'> B</span></font></p>
+  </td>
+  <td width="25%" height=40 bgcolor="#D3DFEE" style='width:25.0%;border-top:
+  none;border-left:none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><u><font
+  size=1 face="Lucida Sans Unicode"><span lang=EN-US style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>¬</span></font></u><u><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>B</span></font></u></p>
+  </td>
+  <td width="25%" height=40 bgcolor="#D3DFEE" style='width:25.0%;border-top:
+  none;border-left:none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=EN-US style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>¬</span></font><font size=1
+  face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>A</span></font></p>
+  </td>
+  <td width="25%" height=40 bgcolor="#D3DFEE" style='width:25.0%;border-top:
+  none;border-left:none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>&nbsp;</span></font></p>
+  </td>
+ </tr>
+ <tr height=40 style='height:19.85pt'>
+  <td width="25%" height=40 style='width:25.0%;border:solid #00B0F0 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>A </span></font><font size=1
+  face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>⇔</span></font><font size=1
+  face="Lucida Sans Unicode"><span lang=EN-US style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'> B</span></font></p>
+  </td>
+  <td width="25%" height=40 style='width:25.0%;border-top:none;border-left:
+  none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>A</span></font></p>
+  </td>
+  <td width="25%" height=40 style='width:25.0%;border-top:none;border-left:
+  none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>B</span></font></p>
+  </td>
+  <td width="25%" height=40 style='width:25.0%;border-top:none;border-left:
+  none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>&nbsp;</span></font></p>
+  </td>
+ </tr>
+ <tr height=40 style='height:19.85pt'>
+  <td width="25%" height=40 bgcolor="#D3DFEE" style='width:25.0%;border:solid #00B0F0 1.0pt;
+  border-top:none;background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>A </span></font><font size=1
+  face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>⇔</span></font><font size=1
+  face="Lucida Sans Unicode"><span lang=NL-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'> B</span></font></p>
+  </td>
+  <td width="25%" height=40 bgcolor="#D3DFEE" style='width:25.0%;border-top:
+  none;border-left:none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>B</span></font></p>
+  </td>
+  <td width="25%" height=40 bgcolor="#D3DFEE" style='width:25.0%;border-top:
+  none;border-left:none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>A</span></font></p>
+  </td>
+  <td width="25%" height=40 bgcolor="#D3DFEE" style='width:25.0%;border-top:
+  none;border-left:none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>&nbsp;</span></font></p>
+  </td>
+ </tr>
+ <tr height=40 style='height:19.85pt'>
+  <td width="25%" height=40 style='width:25.0%;border:solid #00B0F0 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>A </span></font><font size=1
+  face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>⇔</span></font><font size=1
+  face="Lucida Sans Unicode"><span lang=NL-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'> B</span></font></p>
+  </td>
+  <td width="25%" height=40 style='width:25.0%;border-top:none;border-left:
+  none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><u><font
+  size=1 face="Lucida Sans Unicode"><span lang=NL-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>¬</span></font></u><u><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>A</span></font></u></p>
+  </td>
+  <td width="25%" height=40 style='width:25.0%;border-top:none;border-left:
+  none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=NL-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>¬</span></font><font size=1
+  face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>B</span></font></p>
+  </td>
+  <td width="25%" height=40 style='width:25.0%;border-top:none;border-left:
+  none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>&nbsp;</span></font></p>
+  </td>
+ </tr>
+ <tr height=40 style='height:19.85pt'>
+  <td width="25%" height=40 bgcolor="#D3DFEE" style='width:25.0%;border:solid #00B0F0 1.0pt;
+  border-top:none;background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>A </span></font><font size=1
+  face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>⇔</span></font><font size=1
+  face="Lucida Sans Unicode"><span lang=NL-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'> B</span></font></p>
+  </td>
+  <td width="25%" height=40 bgcolor="#D3DFEE" style='width:25.0%;border-top:
+  none;border-left:none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><u><font
+  size=1 face="Lucida Sans Unicode"><span lang=NL-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>¬</span></font></u><u><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>B</span></font></u></p>
+  </td>
+  <td width="25%" height=40 bgcolor="#D3DFEE" style='width:25.0%;border-top:
+  none;border-left:none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><font size=1 face="Lucida Sans Unicode"><span
+  lang=NL-BE style='font-size:9.0pt;font-family:"Lucida Sans Unicode",sans-serif'>¬</span></font><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>A</span></font></p>
+  </td>
+  <td width="25%" height=40 bgcolor="#D3DFEE" style='width:25.0%;border-top:
+  none;border-left:none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>&nbsp;</span></font></p>
+  </td>
+ </tr>
+ <tr height=40 style='height:19.85pt'>
+  <td width="25%" height=40 style='width:25.0%;border:solid #00B0F0 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=NL-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>¬¬</span></font><font size=1
+  face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>A</span></font></p>
+  </td>
+  <td width="25%" height=40 style='width:25.0%;border-top:none;border-left:
+  none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>&nbsp;</span></font></p>
+  </td>
+  <td width="25%" height=40 style='width:25.0%;border-top:none;border-left:
+  none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>A</span></font></p>
+  </td>
+  <td width="25%" height=40 style='width:25.0%;border-top:none;border-left:
+  none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>&nbsp;</span></font></p>
+  </td>
+ </tr>
+ <tr height=40 style='height:19.85pt'>
+  <td width="25%" height=40 bgcolor="#D3DFEE" style='width:25.0%;border:solid #00B0F0 1.0pt;
+  border-top:none;background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=NL-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>¬(A ∧ B)</span></font></p>
+  </td>
+  <td width="25%" height=40 bgcolor="#D3DFEE" style='width:25.0%;border-top:
+  none;border-left:none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>A</span></font></p>
+  </td>
+  <td width="25%" height=40 bgcolor="#D3DFEE" style='width:25.0%;border-top:
+  none;border-left:none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=NL-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>¬</span></font><font size=1
+  face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>B</span></font></p>
+  </td>
+  <td width="25%" height=40 bgcolor="#D3DFEE" style='width:25.0%;border-top:
+  none;border-left:none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>&nbsp;</span></font></p>
+  </td>
+ </tr>
+ <tr height=40 style='height:19.85pt'>
+  <td width="25%" height=40 style='width:25.0%;border:solid #00B0F0 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=NL-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>¬(A ∧ B)</span></font></p>
+  </td>
+  <td width="25%" height=40 style='width:25.0%;border-top:none;border-left:
+  none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>B</span></font></p>
+  </td>
+  <td width="25%" height=40 style='width:25.0%;border-top:none;border-left:
+  none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=NL-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>¬</span></font><font size=1
+  face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>A</span></font></p>
+  </td>
+  <td width="25%" height=40 style='width:25.0%;border-top:none;border-left:
+  none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>&nbsp;</span></font></p>
+  </td>
+ </tr>
+ <tr height=40 style='height:19.85pt'>
+  <td width="25%" height=40 bgcolor="#D3DFEE" style='width:25.0%;border:solid #00B0F0 1.0pt;
+  border-top:none;background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=NL-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>¬(A ∨ B)</span></font></p>
+  </td>
+  <td width="25%" height=40 bgcolor="#D3DFEE" style='width:25.0%;border-top:
+  none;border-left:none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>&nbsp;</span></font></p>
+  </td>
+  <td width="25%" height=40 bgcolor="#D3DFEE" style='width:25.0%;border-top:
+  none;border-left:none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=NL-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>¬</span></font><font size=1
+  face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>A</span></font></p>
+  </td>
+  <td width="25%" height=40 bgcolor="#D3DFEE" style='width:25.0%;border-top:
+  none;border-left:none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=NL-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>¬</span></font><font size=1
+  face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>B</span></font></p>
+  </td>
+ </tr>
+ <tr height=40 style='height:19.85pt'>
+  <td width="25%" height=40 style='width:25.0%;border:solid #00B0F0 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=NL-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>¬</span></font><font size=1
+  face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>(A </span></font><font size=1
+  face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>⇒</span></font><font size=1
+  face="Lucida Sans Unicode"><span lang=NL-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'> B)</span></font></p>
+  </td>
+  <td width="25%" height=40 style='width:25.0%;border-top:none;border-left:
+  none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>&nbsp;</span></font></p>
+  </td>
+  <td width="25%" height=40 style='width:25.0%;border-top:none;border-left:
+  none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=NL-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>A</span></font></p>
+  </td>
+  <td width="25%" height=40 style='width:25.0%;border-top:none;border-left:
+  none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=NL-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>¬</span></font><font size=1
+  face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>B</span></font></p>
+  </td>
+ </tr>
+ <tr height=40 style='height:19.85pt'>
+  <td width="25%" height=40 bgcolor="#D3DFEE" style='width:25.0%;border:solid #00B0F0 1.0pt;
+  border-top:none;background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=NL-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>¬</span></font><font size=1
+  face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>(A </span></font><font size=1
+  face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>⇔</span></font><font size=1
+  face="Lucida Sans Unicode"><span lang=NL-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'> B)</span></font></p>
+  </td>
+  <td width="25%" height=40 bgcolor="#D3DFEE" style='width:25.0%;border-top:
+  none;border-left:none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>A</span></font></p>
+  </td>
+  <td width="25%" height=40 bgcolor="#D3DFEE" style='width:25.0%;border-top:
+  none;border-left:none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=NL-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>¬</span></font><font size=1
+  face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>B</span></font></p>
+  </td>
+  <td width="25%" height=40 bgcolor="#D3DFEE" style='width:25.0%;border-top:
+  none;border-left:none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=NL-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>&nbsp;</span></font></p>
+  </td>
+ </tr>
+ <tr height=40 style='height:19.85pt'>
+  <td width="25%" height=40 style='width:25.0%;border:solid #00B0F0 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=NL-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>¬</span></font><font size=1
+  face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>(A </span></font><font size=1
+  face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>⇔</span></font><font size=1
+  face="Lucida Sans Unicode"><span lang=NL-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'> B)</span></font></p>
+  </td>
+  <td width="25%" height=40 style='width:25.0%;border-top:none;border-left:
+  none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>B</span></font></p>
+  </td>
+  <td width="25%" height=40 style='width:25.0%;border-top:none;border-left:
+  none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=NL-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>¬</span></font><font size=1
+  face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>A</span></font></p>
+  </td>
+  <td width="25%" height=40 style='width:25.0%;border-top:none;border-left:
+  none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=NL-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>&nbsp;</span></font></p>
+  </td>
+ </tr>
+ <tr height=40 style='height:19.85pt'>
+  <td width="25%" height=40 bgcolor="#D3DFEE" style='width:25.0%;border:solid #00B0F0 1.0pt;
+  border-top:none;background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=NL-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>¬</span></font><font size=1
+  face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>(A </span></font><font size=1
+  face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>⇔</span></font><font size=1
+  face="Lucida Sans Unicode"><span lang=NL-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'> B)</span></font></p>
+  </td>
+  <td width="25%" height=40 bgcolor="#D3DFEE" style='width:25.0%;border-top:
+  none;border-left:none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><u><font
+  size=1 face="Lucida Sans Unicode"><span lang=NL-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>¬</span></font></u><u><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>A</span></font></u></p>
+  </td>
+  <td width="25%" height=40 bgcolor="#D3DFEE" style='width:25.0%;border-top:
+  none;border-left:none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=NL-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>B</span></font></p>
+  </td>
+  <td width="25%" height=40 bgcolor="#D3DFEE" style='width:25.0%;border-top:
+  none;border-left:none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  background:#D3DFEE;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=NL-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>&nbsp;</span></font></p>
+  </td>
+ </tr>
+ <tr height=40 style='height:19.85pt'>
+  <td width="25%" height=40 style='width:25.0%;border:solid #00B0F0 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=NL-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>¬</span></font><font size=1
+  face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>(A </span></font><font size=1
+  face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>⇔</span></font><font size=1
+  face="Lucida Sans Unicode"><span lang=NL-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'> B)</span></font></p>
+  </td>
+  <td width="25%" height=40 style='width:25.0%;border-top:none;border-left:
+  none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><u><font
+  size=1 face="Lucida Sans Unicode"><span lang=NL-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>¬</span></font></u><u><font
+  size=1 face="Lucida Sans Unicode"><span lang=FR-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>B</span></font></u></p>
+  </td>
+  <td width="25%" height=40 style='width:25.0%;border-top:none;border-left:
+  none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal'><font
+  size=1 face="Lucida Sans Unicode"><span lang=NL-BE style='font-size:9.0pt;
+  font-family:"Lucida Sans Unicode",sans-serif'>A</span></font></p>
+  </td>
+  <td width="25%" height=40 style='width:25.0%;border-top:none;border-left:
+  none;border-bottom:solid #00B0F0 1.0pt;border-right:solid #00B0F0 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:19.85pt'>
+  <p class=MsoNormalJD align=center style='text-align:center;line-height:normal;
+  page-break-after:avoid'><font size=1 face="Lucida Sans Unicode"><span
+  lang=NL-BE style='font-size:9.0pt;font-family:"Lucida Sans Unicode",sans-serif'>&nbsp;</span></font></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify'><b><font size=3 color="#0070c0"
+face="Times New Roman"><span lang=EN-US style='font-size:12.0pt;line-height:
+115%;font-family:"Times New Roman",serif;color:#0070C0;font-weight:bold'>&nbsp;</span></font></b></p>
+
+<p class=MsoNormal style='text-align:justify'><font size=3
+face="Times New Roman"><span lang=EN-US style='font-size:12.0pt;line-height:
+115%;font-family:"Times New Roman",serif'>An instance of the Propositional Rule
+that uses only one assumption is called a <i><span style='font-style:italic'>Unary</span></i>
+Propositional Rule. When two assumptions are used it is called a <i><span
+style='font-style:italic'>Binary</span></i> Propositional Rule.</span></font></p>
+
+<p class=MsoNormal style='text-align:justify'><b><font size=3 color="#0070c0"
+face="Times New Roman"><span lang=EN-US style='font-size:12.0pt;line-height:
+115%;font-family:"Times New Roman",serif;color:#0070C0;font-weight:bold'>The
+Equality Rules. </span></font></b><font size=3 face="Times New Roman"><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif'>When
+the given sentences contain equalities or inequalities one also needs the
+Equality Rules. We now describe  the equality rules in case that the given
+sentences do <i><font color=red><span style='color:red;font-style:italic'>not </span></font></i>contain
+inequalities: </span></font></p>
+
+<p class=MsoNormal style='text-align:justify'><b><font size=3 color="#0070c0"
+face="Times New Roman"><span lang=EN-US style='font-size:12.0pt;line-height:
+115%;font-family:"Times New Roman",serif;color:#0070C0;font-weight:bold'>The
+Assumption-free Equality Rule. </span></font></b><font size=3
+face="Times New Roman"><span lang=EN-US style='font-size:12.0pt;line-height:
+115%;font-family:"Times New Roman",serif'>Using no assumptions one deduces any
+equality of the form t = t, where t is any <i><font color=red><span
+style='color:red;font-style:italic'>term without variables.</span></font></i></span></font></p>
+
+<p class=MsoNormal style='text-align:justify'><b><font size=3 color="#0070c0"
+face="Times New Roman"><span lang=EN-US style='font-size:12.0pt;line-height:
+115%;font-family:"Times New Roman",serif;color:#0070C0;font-weight:bold'>The
+Unary Equality Rule. </span></font></b><font size=3 face="Times New Roman"><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif'>From
+any sentence A one deduces any sentence B obtained from A by replacing
+(possibly several times) any sub-formula of the form t = u by u = t, where t
+and u are terms.</span></font></p>
+
+<p class=MsoNormal style='text-align:justify'><b><font size=3 color="#0070c0"
+face="Times New Roman"><span lang=EN-US style='font-size:12.0pt;line-height:
+115%;font-family:"Times New Roman",serif;color:#0070C0;font-weight:bold'>The
+Binary Equality Rule. </span></font></b><font size=3 face="Times New Roman"><span
+lang=EN-US style='font-size:12.0pt;line-height:115%;font-family:"Times New Roman",serif'>From
+any sentence A and a sentence t1 = t2 (with t1 and t2 terms without variables),
+one deduces any sentence B obtained from A by replacing (possibly several
+times) t1 by t2 and/or t2 by t1, and/or replacing (possibly several times) any
+sub-formula of the form t = u by u = t, where t and u are terms.</span></font></p>
+
+<p class=MsoNormal style='text-align:justify'><font size=3
+face="Times New Roman"><span lang=EN-US style='font-size:12.0pt;line-height:
+115%;font-family:"Times New Roman",serif'>Note that the Unary Equality Rule is
+a special case of the Binary Equality Rule.</span></font></p>
+
+<p class=MsoNormal style='text-align:justify'><font size=3
+face="Times New Roman"><span lang=EN-US style='font-size:12.0pt;line-height:
+115%;font-family:"Times New Roman",serif'>When the given sentences contain
+inequalities then there is an additional equality rule which states that one
+can replace any inequality t</span></font><font size=3
+face="Lucida Sans Unicode"><span lang=EN-US style='font-size:12.0pt;line-height:
+115%;font-family:"Lucida Sans Unicode",sans-serif'>≠</span></font><font size=3
+face="Times New Roman"><span lang=EN-US style='font-size:12.0pt;line-height:
+115%;font-family:"Times New Roman",serif'>u appearing in a sentence by </span></font><font
+size=1 face="Lucida Sans Unicode"><span lang=EN-US style='font-size:9.0pt;
+line-height:115%;font-family:"Lucida Sans Unicode",sans-serif'>¬t=u. </span></font><font
+size=3 face="Times New Roman"><span lang=EN-US style='font-size:12.0pt;
+line-height:115%;font-family:"Times New Roman",serif'>Clearly it is simpler to
+replace all inequalities by negations of equalities before one starts using the
+ProofAssistant. That is the reason why the ProofAssistant does not support
+inequalities.</span></font></p>
+
+</div>
+
+</body>
+
+</html>

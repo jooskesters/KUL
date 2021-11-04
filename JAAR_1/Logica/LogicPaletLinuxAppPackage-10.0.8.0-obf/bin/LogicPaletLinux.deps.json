@@ -1,0 +1,229 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0/linux-x64",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {},
+    ".NETCoreApp,Version=v5.0/linux-x64": {
+      "LogicPaletLinux/10.0.8.0": {
+        "dependencies": {
+          "Eto.Forms": "2.5.10",
+          "Eto.Platform.Gtk": "2.5.10",
+          "GtkSharp": "3.22.25.128",
+          "LogicPaletStd": "10.0.8",
+          "LogicPaletStdViews": "10.0.8"
+        },
+        "runtime": {
+          "LogicPaletLinux.dll": {}
+        }
+      },
+      "AtkSharp/3.22.25.128": {
+        "dependencies": {
+          "GLibSharp": "3.22.25.128"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AtkSharp.dll": {
+            "assemblyVersion": "3.22.25.128",
+            "fileVersion": "3.22.25.128"
+          }
+        }
+      },
+      "CairoSharp/3.22.25.128": {
+        "runtime": {
+          "lib/netstandard2.0/CairoSharp.dll": {
+            "assemblyVersion": "3.22.25.128",
+            "fileVersion": "3.22.25.128"
+          }
+        }
+      },
+      "Eto.Forms/2.5.10": {
+        "dependencies": {
+          "System.ComponentModel.Annotations": "4.7.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Eto.dll": {
+            "assemblyVersion": "2.5.0.0",
+            "fileVersion": "2.5.7683.15038"
+          }
+        }
+      },
+      "Eto.Platform.Gtk/2.5.10": {
+        "dependencies": {
+          "Eto.Forms": "2.5.10",
+          "GtkSharp": "3.22.25.128"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Eto.Gtk.dll": {
+            "assemblyVersion": "2.5.0.0",
+            "fileVersion": "2.5.7683.15040"
+          }
+        }
+      },
+      "GdkSharp/3.22.25.128": {
+        "dependencies": {
+          "CairoSharp": "3.22.25.128",
+          "GLibSharp": "3.22.25.128",
+          "GioSharp": "3.22.25.128",
+          "PangoSharp": "3.22.25.128"
+        },
+        "runtime": {
+          "lib/netstandard2.0/GdkSharp.dll": {
+            "assemblyVersion": "3.22.25.128",
+            "fileVersion": "3.22.25.128"
+          }
+        }
+      },
+      "GioSharp/3.22.25.128": {
+        "dependencies": {
+          "GLibSharp": "3.22.25.128"
+        },
+        "runtime": {
+          "lib/netstandard2.0/GioSharp.dll": {
+            "assemblyVersion": "3.22.25.128",
+            "fileVersion": "3.22.25.128"
+          }
+        }
+      },
+      "GLibSharp/3.22.25.128": {
+        "runtime": {
+          "lib/netstandard2.0/GLibSharp.dll": {
+            "assemblyVersion": "3.22.25.128",
+            "fileVersion": "3.22.25.128"
+          }
+        }
+      },
+      "GtkSharp/3.22.25.128": {
+        "dependencies": {
+          "AtkSharp": "3.22.25.128",
+          "CairoSharp": "3.22.25.128",
+          "GLibSharp": "3.22.25.128",
+          "GdkSharp": "3.22.25.128",
+          "GioSharp": "3.22.25.128",
+          "PangoSharp": "3.22.25.128"
+        },
+        "runtime": {
+          "lib/netstandard2.0/GtkSharp.dll": {
+            "assemblyVersion": "3.22.25.128",
+            "fileVersion": "3.22.25.128"
+          }
+        }
+      },
+      "PangoSharp/3.22.25.128": {
+        "dependencies": {
+          "CairoSharp": "3.22.25.128",
+          "GLibSharp": "3.22.25.128"
+        },
+        "runtime": {
+          "lib/netstandard2.0/PangoSharp.dll": {
+            "assemblyVersion": "3.22.25.128",
+            "fileVersion": "3.22.25.128"
+          }
+        }
+      },
+      "System.ComponentModel.Annotations/4.7.0": {},
+      "LogicPaletStd/10.0.8": {
+        "runtime": {
+          "LogicPaletStd.dll": {}
+        }
+      },
+      "LogicPaletStdViews/10.0.8": {
+        "dependencies": {
+          "Eto.Forms": "2.5.10",
+          "LogicPaletStd": "10.0.8"
+        },
+        "runtime": {
+          "LogicPaletStdViews.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LogicPaletLinux/10.0.8.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AtkSharp/3.22.25.128": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tvNPUfYys12Wrr4rRnhUeOyNxZx3GAu0WzrbfXIZf9PTn1gHN21TvE9sv7BKD85764yM2ScDFAPoq1dsTuCi9A==",
+      "path": "atksharp/3.22.25.128",
+      "hashPath": "atksharp.3.22.25.128.nupkg.sha512"
+    },
+    "CairoSharp/3.22.25.128": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JZ5vrGvU/iKkPx6ixPk1cB91YpWCnFueHpOqSza8DCvFVjW3AgDC/4XQz8TAr1AOnBxasl2n5mXQd0T2m9VDTQ==",
+      "path": "cairosharp/3.22.25.128",
+      "hashPath": "cairosharp.3.22.25.128.nupkg.sha512"
+    },
+    "Eto.Forms/2.5.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eIHTPwktPT67qw1sv65Lnb75+0Llzwf6Z6O3r48Ls3v6nhjhDJIqniETgicaUNfexQYyoyDg5QuX9sYQusoiUg==",
+      "path": "eto.forms/2.5.10",
+      "hashPath": "eto.forms.2.5.10.nupkg.sha512"
+    },
+    "Eto.Platform.Gtk/2.5.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-a0jiKvvLdU+jzOrrYFCIVkeTbEVqOxrcnG+p7fwH/aw+BJovetbp3DHxT/Z9E3aChY+eHLFtP4dOd3WglVKSgg==",
+      "path": "eto.platform.gtk/2.5.10",
+      "hashPath": "eto.platform.gtk.2.5.10.nupkg.sha512"
+    },
+    "GdkSharp/3.22.25.128": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wIGWjfXBTnjwwxvznpy8Mu+5ZkBvFD6TDjZ7X3Ml45/37+ji4Eso0fz4q+SqgbKl8JT90shqyeVWEoPHrPcJwg==",
+      "path": "gdksharp/3.22.25.128",
+      "hashPath": "gdksharp.3.22.25.128.nupkg.sha512"
+    },
+    "GioSharp/3.22.25.128": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-V1vvfx1ktxcVsVuJE60iaOjNuqjRBhxpQHGaKQXrn7Uet6IbBU4eO02b5nGSeZ+gQ1cHutJ2cjB74nghMp7ijA==",
+      "path": "giosharp/3.22.25.128",
+      "hashPath": "giosharp.3.22.25.128.nupkg.sha512"
+    },
+    "GLibSharp/3.22.25.128": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oMY060IsNrB6GK33QQpbtvVqKOqF5+ux38Qt+gpXzfyXkdYrFty+AVF51a793fJkWhXINuaQwqx3XeXaMBkkVA==",
+      "path": "glibsharp/3.22.25.128",
+      "hashPath": "glibsharp.3.22.25.128.nupkg.sha512"
+    },
+    "GtkSharp/3.22.25.128": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rtxQ7x1ZE1AEp5491PAL4shrXUeXkyLiOjNJDPgdLG4IbGH/QSPfq0Ox0ehJ5QAyIcuSDyj6xA5PvAaZhMKjlg==",
+      "path": "gtksharp/3.22.25.128",
+      "hashPath": "gtksharp.3.22.25.128.nupkg.sha512"
+    },
+    "PangoSharp/3.22.25.128": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-n/VMD09Ylk0xKWSRcLy3V1Y3B6pn/7wsHCt2T6uOeQQ1VqE3RyFbIqk/AO8YeRt/MsmhpZbdsVPaUgggUPR6Mg==",
+      "path": "pangosharp/3.22.25.128",
+      "hashPath": "pangosharp.3.22.25.128.nupkg.sha512"
+    },
+    "System.ComponentModel.Annotations/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0YFqjhp/mYkDGpU0Ye1GjE53HMp9UVfGN7seGpAMttAC0C40v5gw598jCgpbBLMmCo0E5YRLBv5Z2doypO49ZQ==",
+      "path": "system.componentmodel.annotations/4.7.0",
+      "hashPath": "system.componentmodel.annotations.4.7.0.nupkg.sha512"
+    },
+    "LogicPaletStd/10.0.8": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LogicPaletStdViews/10.0.8": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
